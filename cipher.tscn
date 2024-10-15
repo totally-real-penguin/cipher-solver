@@ -1,0 +1,92 @@
+[gd_scene load_steps=9 format=3 uid="uid://cim4wm6lkfm05"]
+
+[ext_resource type="Theme" uid="uid://fxuvwq56t6yd" path="res://assets/main.tres" id="1_qbv20"]
+[ext_resource type="Script" path="res://cipher.gd" id="2_h7qdb"]
+[ext_resource type="PackedScene" uid="uid://benw8djs88lfu" path="res://ciphers/scenes/ceaser.tscn" id="3_jekfq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e3ghw"]
+bg_color = Color(0.141176, 0.152941, 0.227451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7evih"]
+bg_color = Color(0.141176, 0.152941, 0.227451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_02m0g"]
+bg_color = Color(0.130995, 0.142161, 0.212922, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mh6hy"]
+bg_color = Color(0.129412, 0.141176, 0.211765, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s5pb1"]
+bg_color = Color(0.141176, 0.152941, 0.227451, 1)
+
+[node name="CipherSolver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_qbv20")
+script = ExtResource("2_h7qdb")
+
+[node name="BackGround" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.117647, 0.12549, 0.188235, 1)
+
+[node name="Center" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Center"]
+layout_mode = 2
+
+[node name="Input" type="TextEdit" parent="Center/VBox"]
+custom_minimum_size = Vector2(1024, 224)
+layout_mode = 2
+placeholder_text = "Enter cipher text:"
+
+[node name="Cipher" type="CenterContainer" parent="Center/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="ceaser" parent="Center/VBox/Cipher" instance=ExtResource("3_jekfq")]
+layout_mode = 2
+
+[node name="CipherOptions" type="OptionButton" parent="."]
+custom_minimum_size = Vector2(136, 32)
+layout_mode = 2
+offset_left = 18.0
+offset_top = 30.0
+offset_right = 154.0
+offset_bottom = 62.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_e3ghw")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_7evih")
+theme_override_styles/hover = SubResource("StyleBoxFlat_02m0g")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mh6hy")
+theme_override_styles/normal = SubResource("StyleBoxFlat_s5pb1")
+alignment = 1
+selected = 0
+allow_reselect = true
+item_count = 6
+popup/item_0/text = "Ceaser"
+popup/item_1/text = "Substitution"
+popup/item_1/id = 1
+popup/item_2/text = "Tap code"
+popup/item_2/id = 2
+popup/item_3/text = "Morse"
+popup/item_3/id = 3
+popup/item_4/text = "Vigenere"
+popup/item_4/id = 4
+popup/item_5/text = "Affine"
+popup/item_5/id = 5
+
+[connection signal="item_selected" from="CipherOptions" to="." method="_on_cipher_options_item_selected"]

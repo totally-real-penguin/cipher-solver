@@ -1,0 +1,189 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3thm7nnrca8h"]
+
+[ext_resource type="Theme" uid="uid://fxuvwq56t6yd" path="res://assets/main.tres" id="1_48eau"]
+
+[node name="Substitution" type="GridContainer"]
+theme = ExtResource("1_48eau")
+columns = 26
+
+[node name="A" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "A"
+alignment = 1
+max_length = 1
+
+[node name="B" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "B"
+alignment = 1
+max_length = 1
+
+[node name="C" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "C"
+alignment = 1
+max_length = 1
+
+[node name="D" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "D"
+alignment = 1
+max_length = 1
+
+[node name="E" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "E"
+alignment = 1
+max_length = 1
+
+[node name="F" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "F"
+alignment = 1
+max_length = 1
+
+[node name="G" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "G"
+alignment = 1
+max_length = 1
+
+[node name="H" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "H"
+alignment = 1
+max_length = 1
+
+[node name="I" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "I"
+alignment = 1
+max_length = 1
+
+[node name="J" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "J"
+alignment = 1
+max_length = 1
+
+[node name="K" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "K"
+alignment = 1
+max_length = 1
+
+[node name="L" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "L"
+alignment = 1
+max_length = 1
+
+[node name="M" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "M"
+alignment = 1
+max_length = 1
+
+[node name="N" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "N"
+alignment = 1
+max_length = 1
+
+[node name="O" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "O"
+alignment = 1
+max_length = 1
+
+[node name="P" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "P"
+alignment = 1
+max_length = 1
+
+[node name="Q" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "Q"
+alignment = 1
+max_length = 1
+
+[node name="R" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "R"
+alignment = 1
+max_length = 1
+
+[node name="S" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "S"
+alignment = 1
+max_length = 1
+
+[node name="T" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "T"
+alignment = 1
+max_length = 1
+
+[node name="U" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "U"
+alignment = 1
+max_length = 1
+
+[node name="V" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "V"
+alignment = 1
+max_length = 1
+
+[node name="W" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "W"
+alignment = 1
+max_length = 1
+
+[node name="X" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "X"
+alignment = 1
+max_length = 1
+
+[node name="Y" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "Y"
+alignment = 1
+max_length = 1
+
+[node name="Z" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+placeholder_text = "Z"
+alignment = 1
+max_length = 1

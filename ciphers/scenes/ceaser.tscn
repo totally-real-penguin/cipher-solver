@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3 uid="uid://benw8djs88lfu"]
+
+[ext_resource type="Theme" uid="uid://fxuvwq56t6yd" path="res://assets/main.tres" id="1_wfa47"]
+[ext_resource type="Script" path="res://ciphers/scripts/ceaser.gd" id="2_ggn0j"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_leoe4"]
+bg_color = Color(0.117647, 0.12549, 0.188235, 1)
+
+[node name="ceaser" type="HBoxContainer"]
+custom_minimum_size = Vector2(1128, 0)
+offset_right = 1128.0
+offset_bottom = 224.0
+theme = ExtResource("1_wfa47")
+theme_override_constants/separation = 16
+script = ExtResource("2_ggn0j")
+
+[node name="Output" type="TextEdit" parent="."]
+custom_minimum_size = Vector2(873, 224)
+layout_mode = 2
+placeholder_text = "The output will be shifted by the shift number so with a shift of +1 a = b, b=c, ..., z = a"
+editable = false
+
+[node name="Center" type="CenterContainer" parent="."]
+layout_mode = 2
+
+[node name="Background" type="PanelContainer" parent="Center"]
+custom_minimum_size = Vector2(224, 224)
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="Center/Background"]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Plus" type="Button" parent="Center/Background/VBox"]
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "+"
+
+[node name="Shift" type="LineEdit" parent="Center/Background/VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(128, 32)
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_leoe4")
+placeholder_text = "Shift Amount"
+alignment = 1
+max_length = 4
+
+[node name="Minus" type="Button" parent="Center/Background/VBox"]
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "-"
+
+[connection signal="pressed" from="Center/Background/VBox/Plus" to="." method="_on_plus_pressed"]
+[connection signal="pressed" from="Center/Background/VBox/Minus" to="." method="_on_minus_pressed"]

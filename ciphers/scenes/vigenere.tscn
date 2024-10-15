@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbilltk3fxlok"]
+
+[ext_resource type="Theme" uid="uid://fxuvwq56t6yd" path="res://assets/main.tres" id="1_a7wpj"]
+[ext_resource type="Script" path="res://ciphers/scripts/vigenere.gd" id="1_th4l7"]
+
+[node name="vigenere" type="VBoxContainer"]
+custom_minimum_size = Vector2(1128, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_a7wpj")
+script = ExtResource("1_th4l7")
+
+[node name="HBox" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Keyword" type="LineEdit" parent="HBox"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+placeholder_text = "Enter keyword: "
+
+[node name="Output" type="TextEdit" parent="."]
+custom_minimum_size = Vector2(888, 216)
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "This is the big brother of the ceaser cipher using a keyword  you would shift every letter in your plaintext by a letter in your keywords position in the alphabet -1. e.g keyword = cipher plaintext = \"The quick brown fox jumps over the lazy dog\"
+CIP HERCI PHERC IPH ERCIP HERC IPH ERCI PHE
+The quick brown fox jumps over the lazy dog
+Vpt xyzes qysnp nde nloxh vzvt bwl prbg svk"
+editable = false
+wrap_mode = 1

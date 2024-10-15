@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://ud8pmegnalym"]
+
+[ext_resource type="Theme" uid="uid://fxuvwq56t6yd" path="res://assets/main.tres" id="1_tk1y2"]
+[ext_resource type="Script" path="res://ciphers/scripts/affine.gd" id="2_dfy21"]
+
+[node name="Affine" type="HBoxContainer"]
+custom_minimum_size = Vector2(1128, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_tk1y2")
+script = ExtResource("2_dfy21")
+
+[node name="Output" type="TextEdit" parent="."]
+custom_minimum_size = Vector2(964, 224)
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "The cipher text has been shifted by a number b and then multiplied by a number a.
+(ax + b) mod 26 converts it into cipher text"
+editable = false
+
+[node name="VBox" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="A" type="LineEdit" parent="VBox"]
+custom_minimum_size = Vector2(48, 32)
+layout_mode = 2
+placeholder_text = "A"
+alignment = 1
+max_length = 2
+
+[node name="B" type="LineEdit" parent="VBox"]
+custom_minimum_size = Vector2(48, 32)
+layout_mode = 2
+placeholder_text = "B"
+alignment = 1
+max_length = 2

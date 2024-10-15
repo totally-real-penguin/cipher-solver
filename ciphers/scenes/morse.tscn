@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://xo25jmv6f437"]
+
+[ext_resource type="Theme" uid="uid://fxuvwq56t6yd" path="res://assets/main.tres" id="1_k0y27"]
+[ext_resource type="Script" path="res://ciphers/scripts/morse.gd" id="2_2412r"]
+[ext_resource type="Texture2D" uid="uid://dopuqiaw3qmbe" path="res://assets/morse_table.png" id="3_4qk7d"]
+
+[node name="HBoxContainer" type="HBoxContainer"]
+offset_right = 1128.0
+offset_bottom = 224.0
+
+[node name="Morse" type="TextEdit" parent="."]
+custom_minimum_size = Vector2(836, 224)
+layout_mode = 2
+theme = ExtResource("1_k0y27")
+placeholder_text = "You know what morse code is. Use spaces to seperate letters not forward slashes"
+editable = false
+script = ExtResource("2_2412r")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("3_4qk7d")
+expand_mode = 3

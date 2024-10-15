@@ -1,0 +1,287 @@
+[gd_scene load_steps=5 format=3 uid="uid://dsfviebxcjgbh"]
+
+[ext_resource type="Theme" uid="uid://fxuvwq56t6yd" path="res://assets/main.tres" id="1_lpdld"]
+[ext_resource type="Script" path="res://ciphers/scripts/tap_code.gd" id="2_aq2bd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f3tod"]
+bg_color = Color(0.117647, 0.12549, 0.188235, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hd4oj"]
+bg_color = Color(0.117647, 0.12549, 0.188235, 1)
+
+[node name="TapCode" type="HBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("1_lpdld")
+script = ExtResource("2_aq2bd")
+
+[node name="Output" type="TextEdit" parent="."]
+custom_minimum_size = Vector2(888, 224)
+layout_mode = 2
+placeholder_text = "Enter numbers in groups of 2. 11 = A, 12=B ...
+THe arrangement of letters is editable."
+editable = false
+
+[node name="Background" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(224, 224)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="TapCode" type="GridContainer" parent="Background"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("1_lpdld")
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 5
+
+[node name="A" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "A"
+placeholder_text = "A"
+alignment = 1
+max_length = 2
+
+[node name="B" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "B"
+placeholder_text = "B"
+alignment = 1
+max_length = 2
+
+[node name="C" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "C"
+placeholder_text = "C"
+alignment = 1
+max_length = 2
+
+[node name="D" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "D"
+placeholder_text = "D"
+alignment = 1
+max_length = 2
+
+[node name="E" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "E"
+placeholder_text = "E"
+alignment = 1
+max_length = 2
+
+[node name="F" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "F"
+placeholder_text = "F"
+alignment = 1
+max_length = 2
+
+[node name="G" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "G"
+placeholder_text = "G"
+alignment = 1
+max_length = 2
+
+[node name="H" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "H"
+placeholder_text = "H"
+alignment = 1
+max_length = 2
+
+[node name="I" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "IJ"
+placeholder_text = "IJ"
+alignment = 1
+max_length = 2
+
+[node name="K" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "K"
+placeholder_text = "K"
+alignment = 1
+max_length = 2
+
+[node name="L" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "L"
+placeholder_text = "L"
+alignment = 1
+max_length = 2
+
+[node name="M" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "M"
+placeholder_text = "M"
+alignment = 1
+max_length = 2
+
+[node name="N" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "N"
+placeholder_text = "N"
+alignment = 1
+max_length = 2
+
+[node name="O" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "O"
+placeholder_text = "O"
+alignment = 1
+max_length = 2
+
+[node name="P" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "P"
+placeholder_text = "P"
+alignment = 1
+max_length = 2
+
+[node name="Q" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "Q"
+placeholder_text = "Q"
+alignment = 1
+max_length = 2
+
+[node name="R" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "R"
+placeholder_text = "R"
+alignment = 1
+max_length = 2
+
+[node name="S" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "S"
+placeholder_text = "S"
+alignment = 1
+max_length = 2
+
+[node name="T" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "T"
+placeholder_text = "T"
+alignment = 1
+max_length = 2
+
+[node name="U" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "U"
+placeholder_text = "U"
+alignment = 1
+max_length = 2
+
+[node name="V" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "V"
+placeholder_text = "V"
+alignment = 1
+max_length = 2
+
+[node name="W" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "W"
+placeholder_text = "W"
+alignment = 1
+max_length = 2
+
+[node name="X" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "X"
+placeholder_text = "X"
+alignment = 1
+max_length = 2
+
+[node name="Y" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "Y"
+placeholder_text = "Y"
+alignment = 1
+max_length = 2
+
+[node name="Z" type="LineEdit" parent="Background/TapCode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_f3tod")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hd4oj")
+text = "Z"
+placeholder_text = "Z"
+alignment = 1
+max_length = 2
