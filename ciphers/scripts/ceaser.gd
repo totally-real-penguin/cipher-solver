@@ -9,7 +9,7 @@ func _process(_delta: float) -> void:
 		shift = int(%Shift.text)
 	else:
 		shift = 0
-	
+
 	var output = ""
 	for char in Global.input:
 		if char.to_upper() in alphabet:

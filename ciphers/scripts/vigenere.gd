@@ -4,11 +4,11 @@ var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	
+
 	var output = ""
 	var keyword = $HBox/Keyword.text
 	var key_index = 0
-	
+
 	if keyword != "":
 		for char in Global.input:
 			if key_index == len(keyword):

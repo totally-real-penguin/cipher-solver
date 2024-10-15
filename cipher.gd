@@ -14,7 +14,7 @@ func _process(_delta: float) -> void:
 func _on_cipher_options_item_selected(index: int) -> void:
 	if %Cipher.get_child_count() != 0:
 		%Cipher.get_child(0).queue_free()
-		
+
 	match  $CipherOptions.get_item_text(index):
 		"Ceaser": %Cipher.add_child(ceaser.instantiate())
 		"Tap code": %Cipher.add_child(tapcode.instantiate())
